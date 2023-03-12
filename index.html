@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          colors: {
+            "acid-green": "#b0bf1a",
+            "alizarin-crimson": "#e32636",
+            "aqua-haze": "#f6f8fa",
+            bisque: "#cdb79e",
+            black: "#24292f",
+            blue: "#0969da",
+            "cadet-blue": "#7ac5cd",
+            champagne: "#f7e7ce",
+            eucalyptus: "#2DA44E",
+            geyser: "#d0d7de",
+            lavender: "#e6e6fa",
+            mantis: "#74c365",
+            "persian-plum": "#701c1c",
+            platinum: "#e5e4e2",
+            "spring-green": "#ECEBBD",
+            white: "#FFFFFF",
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Head Container -->
+    <div class="sticky top-0 bg-black w-full py-2">
+      <div class="flex justify-between items-center container mx-auto px-10">
+        <div class="flex justify-between items-center">
+          <img class="h-8 w-8 mr-4" src="./assets/github-icon.png" alt="" />
+          <input
+            class="border h-7 mr-4 rounded px-2.5 focus:w-96"
+            placeholder="Search or jump to..."
+            type="text"
+            name="search"
+            id="search id"
+          />
+          <!-- Head Menu -->
+          <div class="flex text-platinum">
+            <div class="mr-2 font-bold text-sm">Pull requests</div>
+            <div class="mr-2 font-bold text-sm">Issues</div>
+            <div class="mr-2 font-bold text-sm">Codespaces</div>
+            <div class="mr-2 font-bold text-sm">Explore</div>
+          </div>
+        </div>
+        <img class="h-6 w-6" src="./assets/notification-icon.png" alt="" />
+      </div>
+    </div>
+    <!-- Menu Container -->
+    <div></div>
+    <!-- Body Content -->
+    <div class="container mx-auto p-10">
+      <div class="grid grid-cols-8 gap-4">
+        <div class="col-span-6">
+          <div class="flex justify-between items-center container mx-auto pb-4">
+            <div class="flex justify-left items-center">
+              <div
+                title="Switch branches or tags"
+                class="flex font-semibold cursor-pointer mr-5 rounded-lg justify-center items-center border border-geyser bg-aqua-haze h-8 w-28"
+              >
+                <img
+                  class="h-4 w-4 mt-1 mr-1.5"
+                  src="./assets/master-icon.png"
+                  alt=""
+                />master
+                <img
+                  class="h-2 w-2 mt-0.5 ml-2"
+                  src="./assets/sub-menu-icon.png"
+                  alt=""
+                />
+              </div>
+              <a href="#" class="group block bg-white">
+                <div class="flex items-center space-x-1.5">
+                  <svg
+                    viewBox="0 0 16 16"
+                    version="1.1"
+                    class="h-4 w-4 mt-0.5 stroke-0 group-hover:stroke-blue group-hover:stroke-[0.2px]"
+                  >
+                    <path
+                      d="M9.5 3.25a2.25 2.25 0 1 1 3 2.122V6A2.5 2.5 0 0 1 10 8.5H6a1 1 0 0 0-1 1v1.128a2.251 2.251 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.5 0v1.836A2.493 2.493 0 0 1 6 7h4a1 1 0 0 0 1-1v-.628A2.25 2.25 0 0 1 9.5 3.25Zm-6 0a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Zm8.25-.75a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5ZM4.25 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Z"
+                    ></path>
+                  </svg>
+                  <h3
+                    class="flex text-black group-hover:text-blue group-hover:stroke-[0.2px] pr-2"
+                  >
+                    <div class="font-medium mr-1">1</div>
+                    branch
+                  </h3>
+                </div>
+              </a>
+              <a href="#" class="group block bg-white">
+                <div class="flex items-center space-x-1.5">
+                  <svg
+                    viewBox="0 0 16 16"
+                    version="1.1"
+                    class="h-4 w-4 mt-0.5 ml-2 mr-0.5 stroke-0 group-hover:stroke-blue group-hover:stroke-[0.2px]"
+                  >
+                    <path
+                      d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.752 1.752 0 0 1 1 7.775Zm1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"
+                    ></path>
+                  </svg>
+                  <h3
+                    class="flex text-black group-hover:text-blue group-hover:stroke-[0.2px] pr-2"
+                  >
+                    <div class="font-medium mr-1">0</div>
+                    tags
+                  </h3>
+                </div>
+              </a>
+            </div>
+            <div class="flex justify-right items-center">
+              <div
+                class="flex font-semibold text-sm cursor-pointer rounded-lg justify-center items-center border border-geyser bg-aqua-haze h-8 w-24 mr-2"
+              >
+                Go to file
+              </div>
+              <div
+                class="flex font-semibold text-sm cursor-pointer rounded-lg justify-center items-center border border-geyser bg-aqua-haze h-8 w-28 mr-2"
+              >
+                Add file
+                <img
+                  class="h-2 w-2 mt-0.5 ml-2"
+                  src="./assets/sub-menu-icon.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="flex font-semibold text-white text-sm cursor-pointer rounded-lg justify-center items-center border border-geyser bg-eucalyptus h-8 w-2/5 mr-2"
+              >
+                <> Code
+                <img
+                  class="h-2 w-2 mt-0.5 ml-1"
+                  src="./assets/sub-menu-icon-2.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="border-2 border-geyser rounded-lg overflow-auto bg-aqua-haze"
+          >
+            <!-- Commit Info Section -->
+            <div
+              class="flex justify-between items-center p-4 border-b-2 border-geyser"
+            >
+              <div class="flex">
+                <img
+                  class="rounded-full h-6 w-6 mr-3"
+                  src="./assets/profile-photo.png"
+                  alt=""
+                />
+                <div>
+                  <b
+                    title="View all commits by zevano556"
+                    class="font-medium cursor-pointer hover:underline underline-offset-2"
+                    >zevano556</b
+                  >
+                  first commit
+                </div>
+              </div>
+              <div class="flex">
+                <img
+                  class="h-4 w-4 my-auto"
+                  src="./assets/clock-icon.png"
+                  alt=""
+                />
+                <div class="ml-1.5">1 commit</div>
+              </div>
+            </div>
+            <table class="w-full">
+              <tbody>
+                <tr
+                  class="bg-white hover:bg-aqua-haze border-b-2 border-geyser"
+                >
+                  <td
+                    class="flex justify-left pl-2 py-3 items-center hover:text-blue hover:underline underline-offset-2"
+                  >
+                    <img
+                      class="h-4 w-4 mr-2"
+                      src="./assets/file-icon.png"
+                      alt=""
+                    />
+                    index.css
+                  </td>
+                  <td
+                    class="text-center hover:text-blue hover:underline underline-offset-2"
+                  >
+                    first commit
+                  </td>
+                  <td class="text-right pr-2">48 minutes ago</td>
+                </tr>
+                <tr class="bg-white hover:bg-aqua-haze">
+                  <td
+                    class="flex pl-2 py-3 justify-left items-center hover:text-blue hover:underline underline-offset-2"
+                  >
+                    <img
+                      class="h-4 w-4 mr-2"
+                      src="./assets/file-icon.png"
+                      alt=""
+                    />index.html
+                  </td>
+                  <td
+                    class="text-center hover:text-blue hover:underline underline-offset-2"
+                  >
+                    first commit
+                  </td>
+                  <td class="text-right pr-2">48 minutes ago</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-span-2">Bagian 2</div>
+      </div>
+    </div>
+    <!-- Foot Container -->
+    <div></div>
+  </body>
+</html>
